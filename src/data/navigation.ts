@@ -8,9 +8,7 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
     name: "Home Page",
     children: [
       { id: ncNanoId(), href: "/", name: "Home  1" },
-      { id: ncNanoId(), href: "/home-2", name: "Home  2", isNew: true },
       { id: ncNanoId(), href: "/", name: "Header  1" },
-      { id: ncNanoId(), href: "/home-2", name: "Header  2", isNew: true },
       { id: ncNanoId(), href: "/", name: "Coming Soon" },
     ],
   },
@@ -22,7 +20,6 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
       { id: ncNanoId(), href: "/collection", name: "Category Page 1" },
       { id: ncNanoId(), href: "/collection-2", name: "Category Page 2" },
       { id: ncNanoId(), href: "/product-detail", name: "Product Page 1" },
-      { id: ncNanoId(), href: "/product-detail-2", name: "Product Page 2" },
       { id: ncNanoId(), href: "/cart", name: "Cart Page" },
       { id: ncNanoId(), href: "/checkout", name: "Checkout Page" },
     ],
@@ -62,11 +59,7 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
     href: "/",
     name: "Home Demo 1",
   },
-  {
-    id: ncNanoId(),
-    href: "/home-2",
-    name: "Home Demo 2",
-  },
+
   {
     id: ncNanoId(),
     href: "/collection",
@@ -96,11 +89,7 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
         href: "/product-detail",
         name: "Product detail 1",
       },
-      {
-        id: ncNanoId(),
-        href: "/product-detail-2",
-        name: "Product detail 2",
-      },
+    
     ],
   },
   {
@@ -199,18 +188,18 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
     href: "/collection-2",
     name: "Sport",
   },
-  {
-    id: ncNanoId(),
-    href: "/collection",
-    name: "Templates",
-    type: "megaMenu",
-    children: MEGAMENU_TEMPLATES,
-  },
-  {
-    id: ncNanoId(),
-    href: "/search",
-    name: "Explore",
-    type: "dropdown",
-    children: OTHER_PAGE_CHILD,
-  },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/collection",
+  //   name: "Templates",
+  //   type: "megaMenu",
+  //   children: MEGAMENU_TEMPLATES,
+  // },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/search",
+  //   name: "Explore",
+  //   type: "dropdown",
+  //   children: OTHER_PAGE_CHILD,
+  // },
 ];
