@@ -1,6 +1,6 @@
 import React from "react";
-import logoImg from "@/images/logo.png";
-import logoLightImg from "@/images/logo.png";
+import logoImg from "@/images/logo.svg";
+import logoLightImg from "@/images/darklogo-svg.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,12 +24,12 @@ const Logo: React.FC<LogoProps> = ({
       {/* PLEASE UN COMMENT BELLOW CODE AND USE IT */}
       {img ? (
         <Image
-          className={`block h-8 sm:h-10 w-auto ${
+          className={`block h-32  sm:h-10 w-auto ${
             imgLight ? "dark:hidden" : ""
           }`}
           src={img}
           alt="Logo"
-          sizes="200px"
+          sizes="400px"
           priority
         />
       ) : (
